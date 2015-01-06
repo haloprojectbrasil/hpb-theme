@@ -1,0 +1,286 @@
+/*
+Theme Name: Halo Project Brasil Theme
+Theme URI: http://github.com/germanocorrea/hpb-theme
+Author: Germano Corrêa
+Author URI: http://coffeebased.esy.es/
+Description: Tema criado para o website Halo Project Brasil
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: halo project brasil
+Text Domain: 
+*/
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-color:black;
+}
+hr {
+    border-color:#686868;
+
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+a:hover {
+    color:white;
+    text-decoration:underline;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+}
+
+.header img {
+    margin-top:50px;
+}
+
+.main_box {
+    color:white;
+    background-color:#010716;
+    border-left-color:#010716;
+    margin:15px;
+    float:left;
+    width:60em;
+}
+.main_box a {
+    font-size:20px;
+}
+.main_box #feed_container {
+    border-left:solid 5px;
+    border-left-color:#010716;
+    padding:5px;
+}
+.main_box #feed_container:hover {
+    background-color:#060F28;
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.main_box #feed_container h1,ul{
+    width:30em;
+    margin:1px;
+    padding:1px;
+    list-style-type:none
+}
+.main_box #feed_container ul a {
+    color:white;
+}
+.box {
+    color:white;
+    background-color:#010716;
+    border-bottom:solid 5px;
+    border-bottom-color:#F15A24;
+    padding:3em;
+    margin:3em;
+    margin-top:-20px;
+
+}
+
+.box p {
+    font-size:23px;
+}
+
+.box h1 {
+    font-family: 'Abel', sans-serif;
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    padding-left:6px;
+    font-size:4em;
+}
+#content {
+    background-color: #010716;
+    padding:1em;
+}
+#widget_box {
+    position:relative;
+}
+
+.archive_box {
+    color:white;
+    background-color:#010716;
+    border-bottom:solid 5px;
+    border-bottom-color:#F15A24;
+    margin:2em;
+    width:17em;
+    height:20em;
+    float:left;
+}
+
+.archive_box h1 {
+    color:white;
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    padding-left:5px;
+    margin-left:3px;
+}
+
+.archive_box #archive_content {
+    padding:0.4em;
+}
+.archive_box #archive_content h1 {
+    margin-top:0.02em;
+    margin-bottom:0.02em;
+}
+
+
+.archive_box img {
+    width:100%;
+    height:60%;
+}
+
+.box-nav {
+    font-size:4em;
+    color:#eeebeb;
+    margin:0.5em;
+}
+
+/* General styles for all menus */
+
+.cbp-spmenu {
+	background: #010716;
+	position: fixed;
+}
+
+.cbp-spmenu img {
+	padding:0;
+	margin:0;
+	background: #010716;
+}
+
+.cbp-spmenu a {
+	display: block;
+	color: #fff;
+	background-color:#010716;
+	font-size: 1.1em;
+	font-weight: 300;
+	text-decoration:none;
+	font-family: 'Abel', sans-serif;
+	font-size:20px;
+}
+
+.cbp-spmenu a:hover {
+	background: #060F28;
+	border-left-color: #F15A24;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.cbp-spmenu a:active {
+	background: #060F28;
+	color: white;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.cbp-spmenu-vertical {
+	width: 240px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.cbp-spmenu-vertical a {
+	border-left:4px solid #010716;
+	padding: 1em;
+}
+/* Vertical menu that slides from the left or right */
+
+.cbp-spmenu-left {
+	left: -240px;
+}
+
+.cbp-spmenu-left.cbp-spmenu-open {
+	left: 0px;
+}
+
+/* Push classes applied to the body */
+
+.cbp-spmenu-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.cbp-spmenu-push-toright {
+	left: 240px;
+}
+
+/* Transitions */
+
+.cbp-spmenu,
+.cbp-spmenu-push {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/* Example media queries */
+@media screen and (max-height: 26.375em){
+
+	.cbp-spmenu-vertical {
+		font-size: 90%;
+		width: 190px;
+	}
+	.cbp-spmenu-right {
+		right: -190px;
+	}
+
+	.cbp-spmenu-push-toright {
+		left: 190px;
+	}
+}
+
+.cbp-spmenu h1 {
+    color:white;
+    padding-left:3em;
+}
+
+
+.menu_button {
+	background-color:transparent;
+	border:none;
+}
+
+header .bar{
+    width:100%;
+    height:60px;
+    display:block;
+    position:fixed;
+    top:-1px;
+    left:-1px;
+    background-color:transparent;
+}
+
+header .colored-bar {
+    position:fixed;
+    background-color:#060F28;
+    width:100%;
+    height:60px;
+    display:block;
+    top:-1px;
+    left:-1px;
+}
+header .bar button {
+    color:white;
+    padding:10px;
+    float:left;
+    position:relative;
+}
+
+header .sign-in {
+    color:white;
+    float:right;
+    height:100%;
+    width:100px;
+}
+header .sign-in:hover {
+    background: #060F28;
+	border-left-color: #F15A24;
+	-webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
