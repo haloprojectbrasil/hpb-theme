@@ -15,7 +15,17 @@
 			<div class="bar">
                 <button id="showLeftPush" class="menu_button"><i class="fa fa-navicon fa-2x"></i></button>
                 <div class="sign-in">
-                    blabla
+                        <?php
+                            $user_id = get_current_user_id();
+                            $current_user = wp_get_current_user();
+    	                    $profile_url = get_edit_profile_url( $user_id );
+                            if ( is_user_logged_in() ) {
+                                echo 'Olá ',the_author_meta('display_name', $user_id);
+                            }
+                            else {
+                                echo 'Login';
+                            }
+                        ?>
                 </div>
             </div>
 		</header>
