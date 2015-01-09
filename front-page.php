@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <center>
   <div class="header">
-    <a href="<?php echo get_site_url(); ?>"><img src="wp-content/themes/hpb/img/logo.png" width="100%"/></a>
+    <a href="<?php echo get_site_url(); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" width="100%"/></a>
   </div>
 </center>
     <div class="main_box">

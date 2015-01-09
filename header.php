@@ -1,7 +1,7 @@
 <!DOCTYPE html>
     <html class="no-js" <?php language_attributes(); ?>>
         <head>
-            <link rel="stylesheet" type="text/css" href="wp-content/themes/hpb/style.css" />
+            <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css" />
             <meta charset="<?php bloginfo('charset'); ?>">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 			<a href="#"><i class="fa fa-user fa-1x"></i>&nbsp;&nbsp;Sign In (em breve)</a>
 			<!--<a href="#"><i class="fa fa-arrow-left fa-1x"></i>&nbsp;&nbsp;Esconder Menu</a>-->
 		</nav>
-		<script src="wp-content/themes/hpb/classie.js"></script>
+		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/classie.js"></script>
 		<script>
 			var menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
 				showLeftPush = document.getElementById( 'showLeftPush' ),
