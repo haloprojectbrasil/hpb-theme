@@ -8,7 +8,7 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: halo project brasil
-Text Domain: 
+Text Domain:
 */
 
 body {
@@ -75,7 +75,7 @@ a:hover {
     border-bottom-color:#F15A24;
     padding:3em;
     margin:3em;
-    margin-top:-20px;
+    margin-top:6em;
 
 }
 
@@ -135,6 +135,7 @@ a:hover {
     font-size:4em;
     color:#eeebeb;
     margin:0.5em;
+    margin-top:1.5em;
 }
 
 /* General styles for all menus */
