@@ -32,7 +32,7 @@
                     echo 'Olá ',the_author_meta('display_name', $user_id);
                 }
                 else {
-                    echo 'Login';
+                    echo 'Olá Visitante!';
                 }
                 ?>
             </div>
@@ -41,7 +41,12 @@
 			<a href="#"><i class="fa fa-globe fa-1x"></i>&nbsp;&nbsp;O Universo</a>
 			<a href="#"><i class="fa fa-users fa-1x"></i>&nbsp;&nbsp;Comunidade</a>
 			<a href="#"><i class="fa fa-code fa-1x"></i>&nbsp;&nbsp;O Site</a>
-			<hr><?php wp_loginout(); ?>
+			<hr>
+            <?php
+            if ( is_user_logged_in() ) {}
+            else {wp_register('','');}
+            ?>
+            <?php wp_loginout(); ?>
 			<!--<a href="#"><i class="fa fa-arrow-left fa-1x"></i>&nbsp;&nbsp;Esconder Menu</a>-->
 		</nav>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/classie.js"></script>
