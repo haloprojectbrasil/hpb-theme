@@ -138,6 +138,29 @@ a:hover {
     margin-top:1.5em;
 }
 
+.search {
+    float:right;
+    padding:1em;
+}
+
+.search .screen-reader-text {
+    color:#060F28;
+}
+
+.search #s {
+    background-color:#C9C9C9;
+    color:black;
+    border:none;
+    height:1.8em;
+}
+.search #searchsubmit {
+    border:none;
+    height:1.9em;
+}
+.cbp-spmenu .user {
+    color:white;
+    background-color:#060F28;
+}
 /* General styles for all menus */
 
 .cbp-spmenu {
@@ -151,7 +174,7 @@ a:hover {
 	background: #010716;
 }
 
-.cbp-spmenu a {
+.cbp-spmenu a, p {
 	display: block;
 	color: #fff;
 	background-color:#010716;
@@ -277,11 +300,4 @@ header .sign-in {
     float:right;
     height:100%;
     width:100px;
-}
-header .sign-in:hover {
-    background: #060F28;
-	border-left-color: #F15A24;
-	-webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
 }
