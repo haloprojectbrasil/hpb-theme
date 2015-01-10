@@ -44,7 +44,7 @@
 			<hr>
             <?php
             if ( is_user_logged_in() ) {}
-            else {wp_register('','');}
+            else {wp_login_form();wp_register('','');}
             ?>
             <?php wp_loginout(); ?>
 			<!--<a href="#"><i class="fa fa-arrow-left fa-1x"></i>&nbsp;&nbsp;Esconder Menu</a>-->
