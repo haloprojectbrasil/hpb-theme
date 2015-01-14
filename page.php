@@ -8,6 +8,7 @@
         <?php the_author(); ?>
         <?php the_date(); ?>
         <?php the_content(); ?>
+        <?php comments_template(); ?>
     </div>
 <?php endwhile; ?>
 <?php endif; ?>
