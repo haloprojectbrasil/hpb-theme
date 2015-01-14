@@ -16,11 +16,11 @@
         </div>
         <div id="footer-area">
             <h1>Redes Sociais</h1>
-            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/facebook.png"/><a id="link" href="https://www.facebook.com/TheHaloProjectBR">&nbsp;&nbsp;&nbsp;The Halo Project Brasil<a/><br/><br/>
-            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/twitter.png"/><a id="link" href="https://twitter.com/haloprojectbr">&nbsp;&nbsp;&nbsp;@haloprojectbr<a/><br/><br/>
-            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/instagram.png"/><a id="link" href="http://instagram.com/haloprojectbr">&nbsp;&nbsp;&nbsp;@haloprojectbr<a/><br/><br/>
-            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/youtube.png"/><a id="link" href="https://www.youtube.com/user/haloprojectbr">&nbsp;&nbsp;&nbsp;Halo Project Brasil<a/><br/><br/>
-            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/github.png"/><a id="link" href="https://github.com/haloprojectbrasil/">&nbsp;&nbsp;&nbsp;Halo Project Brasil<a/><br/><br/>
+            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/facebook.png"/>&nbsp;&nbsp;&nbsp;<a id="link" href="https://www.facebook.com/TheHaloProjectBR">The Halo Project Brasil<a/><br/><br/>
+            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/twitter.png"/>&nbsp;&nbsp;&nbsp;<a id="link" href="https://twitter.com/haloprojectbr">@haloprojectbr<a/><br/><br/>
+            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/instagram.png"/>&nbsp;&nbsp;&nbsp;<a id="link" href="http://instagram.com/haloprojectbr">@haloprojectbr<a/><br/><br/>
+            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/youtube.png"/>&nbsp;&nbsp;&nbsp;<a id="link" href="https://www.youtube.com/user/haloprojectbr">Halo Project Brasil<a/><br/><br/>
+            <img id="social" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/github.png"/>&nbsp;&nbsp;&nbsp;<a id="link" href="https://github.com/haloprojectbrasil/">Halo Project Brasil<a/><br/><br/>
         </div>
     </div>
     </body>
