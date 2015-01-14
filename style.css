@@ -138,7 +138,35 @@ a:hover {
     margin:0.5em;
     margin-top:1.5em;
 }
-
+.footer {
+    background:#060F28;
+    width:100%;
+}
+.footer #footer-area {
+    color:white;
+    float:left;
+    width:30%;
+}
+.footer #footer-area h1 {
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    padding-left:5px;
+    margin-left:3px;
+    font-size:2em;
+}
+.footer #footer-area p {
+    background-color:transparent;
+    font-size:15px;
+}
+.footer #footer-area #social {
+    width:2em;
+    height:2em;
+}
+.footer #footer-area #link {
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:1.2em;
+}
 .search {
     float:right;
     padding:1em;
