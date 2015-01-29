@@ -41,7 +41,7 @@ a:hover {
     border-left-color:#010716;
     margin:15px;
     float:left;
-    width:60em;
+    width:75%;
 }
 .main_box a {
     font-size:20px;
@@ -96,6 +96,20 @@ a:hover {
 }
 #widget_box {
     position:relative;
+}
+
+.box-front img, .box-front-first img{
+    width:100%;
+    height:60%;
+}
+.box-front {
+    color:white;
+    width:18em;
+    float:left;
+    margin:1em;
+}
+.box-front:hover {
+    background-color:black;
 }
 
 .archive_box {

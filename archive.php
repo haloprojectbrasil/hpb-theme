@@ -19,7 +19,14 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <a href="<?php the_permalink(); ?>">
     <div class="archive_box">
-        <?php echo get_the_post_thumbnail(); ?>
+        <?php
+            if ( has_post_thumbnail() ) {
+            	echo get_the_post_thumbnail();
+                }
+            else {
+            	echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/thumbnail-default.png" />';
+            }
+        ?>
         <div id="archive_content">
             <h1>
             <?php the_title(); ?>
