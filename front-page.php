@@ -13,12 +13,14 @@
                         echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/thumbnail-default.png" />';
                     }
                 ?>
-                <h1>
-                <?php the_title(); ?>
-                </h1>
-                <?php the_category(); ?>
-                <?php the_author(); ?>
-                <?php the_date(); ?>
+                <div id="box-front-text">
+                    <h1>
+                    <?php the_title(); ?>
+                    </h1>
+                    <?php the_category(); ?>
+                    <?php the_author(); ?>
+                    <?php the_date(); ?>
+                </div>
         </div>
         <?php $cont+=1; ?>
         <?php endwhile; ?>

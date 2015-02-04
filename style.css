@@ -106,10 +106,12 @@ a:hover {
     color:white;
     width:18em;
     float:left;
-    margin:1em;
 }
 .box-front:hover {
-    background-color:black;
+    background-color:#060F28;
+}
+.box-front #box-front-text {
+    margin:1em;
 }
 
 .archive_box {
