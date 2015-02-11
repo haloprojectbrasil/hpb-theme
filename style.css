@@ -37,11 +37,9 @@ a:hover {
 
 .main_box {
     color:white;
-    background-color:#010716;
-    border-left-color:#010716;
     margin:15px;
     float:left;
-    width:75%;
+    width:65%;
 }
 .main_box a {
     font-size:20px;
@@ -97,42 +95,57 @@ a:hover {
 #widget_box {
     position:relative;
 }
-
-.box-front img, .box-front-first img{
-    width:100%;
-    height:60%;
-}
 .box-front {
     color:white;
     width:18em;
+    height:20em;
     float:left;
+    background-color:#010716; 
 }
 .box-front:hover {
     background-color:#060F28;
 }
+.box-front img {
+    width: 100%;
+    height: 100%;
+}
+.box-front #thumb-img {
+    width: 100%;
+    height: 60%;
+}
 .box-front #box-front-text {
     margin:1em;
+}
+.box-front #box-front-text h1 {
+    border-left: solid 5px;
+    border-left-color:#F15A24;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 1px;
+    margin-top: 1px;
+    font-size: 1em;
 }
 
 .archive_box {
     color:white;
     background-color:#010716;
-    border-bottom:solid 5px;
-    border-bottom-color:#F15A24;
     margin:2em;
     width:18em;
     height:20em;
     float:left;
 }
-
-.archive_box h1 {
-    color:white;
-    border-left:solid 5px;
-    border-left-color:#F15A24;
-    padding-left:5px;
-    margin-left:3px;
-    font-size:1em;
+.archive_box:hover {
+    background-color:#060F28;
 }
+.archive_box h1 {
+    border-left: solid 5px;
+    border-left-color:#F15A24;
+    padding-left: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
 
 .archive_box #archive_content {
     padding:0.4em;
@@ -147,6 +160,25 @@ a:hover {
     width:100%;
     height:60%;
 }
+.side {
+    float: right;
+    margin-right: 15px;
+    width: 30%;
+}
+.sidebar {
+    background-color:#010716;
+    color: white;
+    padding: 15px;
+    padding-top: 2px;
+    margin-bottom: 30px;
+
+}
+
+.sidebar h1 {
+    border-left: solid 5px;
+    border-left-color:#F15A24;
+    padding-left: 5px;
+}
 
 .box-nav {
     font-size:4em;
@@ -160,11 +192,12 @@ a:hover {
 }
 .footer #footer-area {
     color:white;
-    float:left;
-    width:30%;
+    float: left;
+    text-align: center;
     margin-left:2.1em;
 }
 .footer #footer-area h1 {
+    text-align: left !important;
     border-left:solid 5px;
     border-left-color:#F15A24;
     padding-left:5px;
@@ -346,4 +379,134 @@ header .sign-in {
     float:right;
     height:100%;
     width:100px;
+}
+
+#slide-arc {
+    top: -500px;
+    display: block;
+}
+
+input #slide-arc {
+	display: none;
+ }
+#slide1:checked ~ #slides .inner { margin-left:0; }
+#slide2:checked ~ #slides .inner { margin-left:-100%; }
+#slide3:checked ~ #slides .inner { margin-left:-200%; }
+#slide4:checked ~ #slides .inner { margin-left:-300%; }
+#slide5:checked ~ #slides .inner { margin-left:-400%; }
+
+#overflow {
+	width:680px;
+	overflow: hidden;
+}
+
+article #slide-arc img {
+	width:680px;
+}
+
+#slides .inner {
+	width: 500%;
+	line-height: 0;
+}
+
+#slides article {
+	float: left;
+}
+
+#controls {
+	margin:-230px auto;
+	width: 850px;
+	height: 50px;
+}
+
+#controls label {
+	display: none;
+	width: 42px;
+	height: 46px;
+	opacity: 0.3;
+}
+
+#controls label:hover {
+	opacity: 0.8;
+	cursor:pointer;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(5),
+#slide5:checked ~ #controls label:nth-child(1) {
+	background-image:url(imagens/direita.png);
+	background-repeat:no-repeat;
+    float: right;
+
+	display: block;
+}
+
+#slide1:checked ~ #active label:nth-child(1),
+#slide2:checked ~ #active label:nth-child(2),
+#slide3:checked ~ #active label:nth-child(3),
+#slide4:checked ~ #active label:nth-child(4),
+#slide5:checked ~ #active label:nth-child(5) {
+	background: #333;
+	border-color: #333 !important;
+}
+/* Slider*/
+
+#slides {
+	width:680px;
+	margin: 1em;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #666;
+	background:transparent;
+
+}
+
+
+/* Animação */
+
+#slides .inner {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -ms-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+     -o-transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+        transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+
+	-webkit-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+	-moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    -ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+     -o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+        transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+
+#controls label{
+	-webkit-transform: translateZ(0);
+	-webkit-transition: opacity 0.2s ease-out;
+	-moz-transition: opacity 0.2s ease-out;
+	-o-transition: opacity 0.2s ease-out;
+	transition: opacity 0.2s ease-out;
+}
+
+#slide1:checked ~ #slides article:nth-child(1) .info,
+#slide2:checked ~ #slides article:nth-child(2) .info,
+#slide3:checked ~ #slides article:nth-child(3) .info,
+#slide4:checked ~ #slides article:nth-child(4) .info,
+#slide5:checked ~ #slides article:nth-child(5) .info {
+	opacity: 0.8;
+	-webkit-transition: all 1s ease-out 0.6s;
+	-moz-transition: all 1s ease-out 0.6s;
+	-o-transition: all 1s ease-out 0.6s;
+	transition: all 1s ease-out 0.6s;
+}
+
+#slide-arc .info, #controls, #slides, .info h3, .desktop, .tablet, .mobile {
+	-webkit-transform: translateZ(0);
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
 }

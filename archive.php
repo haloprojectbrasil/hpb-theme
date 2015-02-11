@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+png<?php get_header(); ?>
 <div class="box-nav">
 <i class="fa fa-archive fa-1x"></i>&nbsp;&nbsp;
 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -24,7 +24,7 @@
             	echo get_the_post_thumbnail();
                 }
             else {
-            	echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/thumbnail-default.png" />';
+            	echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/img/thumbnail-default.svg" />';
             }
         ?>
         <div id="archive_content">
