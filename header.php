@@ -11,7 +11,6 @@
         </head>
     <body class="cbp-spmenu-push" <?php body_class(); ?>>
         <header>
-            <div class="colored-bar"></div>
 			<div class="bar">
                 <button id="showLeftPush" class="menu_button"><i class="fa fa-navicon fa-2x"></i></button>
                 <div class="search">
