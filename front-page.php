@@ -27,8 +27,12 @@
         </div>
     </a>
     <?php endwhile; ?>
-    <?php if(function_exists('wp_pagenavi')) { wp_pagenavi(); } ?>
     <?php endif; ?>
+    <center>
+    <div class="postSet">
+        <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
+    </div>
+    </center>
     </div>
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

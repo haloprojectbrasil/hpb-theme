@@ -1,4 +1,4 @@
-png<?php get_header(); ?>
+<?php get_header(); ?>
 <div class="box-nav">
 <i class="fa fa-archive fa-1x"></i>&nbsp;&nbsp;
 <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -39,4 +39,10 @@ png<?php get_header(); ?>
     </a>
 <?php endwhile; ?>
 <?php endif; ?>
+<center>
+<div class="postSet">
+    <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
+</div>
+</center>
+
 <?php get_footer(); ?>

@@ -11,4 +11,9 @@
     </div>
 <?php endwhile; ?>
 <?php endif; ?>
+<center>
+<div class="postSet">
+    <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
+</div>
+</center>
 <?php get_footer(); ?>

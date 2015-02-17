@@ -165,6 +165,21 @@ a:hover {
     margin:0.5em;
     margin-top:1.5em;
 }
+.postSet {
+    color:white;
+    align:center;
+    margin:5em;
+    font-size:1.5em;
+}
+.postSet a {
+    background-color:#010716;
+    padding:1em;
+    margin:1em;
+    text-decoration:none;
+}
+.postSet a:hover {
+    background-color:#060F28;
+}
 .footer {
     background:#060F28;
     width:100%;
