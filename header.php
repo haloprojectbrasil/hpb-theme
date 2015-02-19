@@ -39,25 +39,11 @@
             </div>
 		</header>
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
-            <!-- <div class="user">
-                <?php
-                $user_id = get_current_user_id();
-                $current_user = wp_get_current_user();
-                $profile_url = get_edit_profile_url( $user_id );
-                if ( is_user_logged_in() ) {
-                    echo 'Olá ',the_author_meta('display_name', $user_id);
-                }
-                else {
-                    echo 'Olá Visitante!';
-                }
-                ?>
-            </div> -->
 			<a href="<?php echo get_site_url(); ?>"><i class="fa fa-home fa-1x"></i>&nbsp;&nbsp;Página Inicial</a>
 			<a href="#"><i class="fa fa-newspaper-o fa-1x"></i>&nbsp;&nbsp;Notícias</a>
 			<a href="#"><i class="fa fa-globe fa-1x"></i>&nbsp;&nbsp;O Universo</a>
 			<a href="#"><i class="fa fa-users fa-1x"></i>&nbsp;&nbsp;Comunidade</a>
 			<a href="#"><i class="fa fa-code fa-1x"></i>&nbsp;&nbsp;O Site</a>
-			<!--<a href="#"><i class="fa fa-arrow-left fa-1x"></i>&nbsp;&nbsp;Esconder Menu</a>-->
 		</nav>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/classie.js"></script>
 		<script>
