@@ -112,6 +112,7 @@ a:hover {
     width:18em;
     height:20em;
     float:left;
+    display:block
 }
 .archive_box:hover {
     background-color:#060F28;
@@ -176,6 +177,7 @@ a:hover {
     padding:1em;
     margin:1em;
     text-decoration:none;
+    display:inline-block;
 }
 .postSet a:hover {
     background-color:#060F28;
