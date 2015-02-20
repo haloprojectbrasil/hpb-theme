@@ -155,7 +155,6 @@ a:hover {
     padding: 15px;
     padding-top: 2px;
     margin-bottom: 30px;
-
 }
 
 .sidebar h1 {
@@ -163,7 +162,9 @@ a:hover {
     border-left-color:#F15A24;
     padding-left: 5px;
 }
-
+.sidebar #youtubeSide {
+    height:18em;
+}
 .box-nav {
     font-size:4em;
     color:#eeebeb;
@@ -208,9 +209,10 @@ a:hover {
     background-color:transparent;
     font-size:15px;
 }
-.footer #footer-area #social {
-    width:2em;
-    height:2em;
+.side .sidebar #social {
+    width:15%;
+    padding:0px;
+    margin:0px;
 }
 .footer #footer-area #link {
     padding-top:1em;
