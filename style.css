@@ -87,24 +87,27 @@ a:hover {
 .box-front {
     color:white;
     background-color:#010716;
+    height:15em;
 }
 .box-front:hover {
     background-color:#060F28;
 }
-.box-front img {
-    width: 40%;
-    height: 100%;
+.box-front #thumb-img {
+    width:40%;
+    height:100%;
     float:left;
 }
+.box-front img {
+    width: 100%;
+    height: 100%;
+}
 .box-front #box-front-text {
-    width:50%;
+    width:57%;
+    float:right;
 }
 .box-front #box-front-text h1 {
-    /*border-left: solid 5px;
-    border-left-color:#F15A24;
-    font-size: 2em;*/
+    font-size:1.3em;
 }
-
 .archive_box {
     color:white;
     background-color:#010716;

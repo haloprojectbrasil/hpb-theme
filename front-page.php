@@ -21,7 +21,7 @@
                     <?php the_title(); ?>
                     </h1>
                     <?php the_category(); ?>
-                    <?php the_author(); ?>
+                    <?php the_author(); ?>,
                     <?php the_date(); ?>
                 </div>
         </div>
