@@ -65,6 +65,10 @@ a:hover {
     margin-top:6em;
 
 }
+.box img{
+    margin:8px;
+    margin-bottom:0px;
+}
 
 .box p {
     font-size:23px;
@@ -88,6 +92,7 @@ a:hover {
     color:white;
     background-color:#010716;
     height:15em;
+    margin-bottom:1em;
 }
 .box-front:hover {
     background-color:#060F28;

@@ -4,6 +4,7 @@
             <link rel="stylesheet" type="text/css" href="<?php echo esc_url( get_template_directory_uri() ); ?>/style.css" />
             <meta charset="<?php bloginfo('charset'); ?>">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="google-site-verification" content="6Pkqh-J0wTzq92nbuMijOwzTrCAKAyO_8qtsRjmQUGI" />
             <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
             <title><?php wp_title(''); ?></title>
@@ -24,6 +25,10 @@
             <meta name="msapplication-TileColor" content="#010716">
             <meta name="msapplication-TileImage" content="/mstile-144x144.png">
             <meta name="theme-color" content="#010716">
+            <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+            </script>
+            <![endif]-->
             <?php wp_head(); ?>
         </head>
     <body class="cbp-spmenu-push" <?php body_class(); ?>>
@@ -40,10 +45,10 @@
 		</header>
 		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
 			<a href="<?php echo get_site_url(); ?>"><i class="fa fa-home fa-1x"></i>&nbsp;&nbsp;Página Inicial</a>
-			<a href="#"><i class="fa fa-newspaper-o fa-1x"></i>&nbsp;&nbsp;Notícias</a>
-			<a href="#"><i class="fa fa-globe fa-1x"></i>&nbsp;&nbsp;O Universo</a>
-			<a href="#"><i class="fa fa-users fa-1x"></i>&nbsp;&nbsp;Comunidade</a>
-			<a href="#"><i class="fa fa-code fa-1x"></i>&nbsp;&nbsp;O Site</a>
+			<a href="<?php echo get_site_url(); ?>/category/noticias/"><i class="fa fa-newspaper-o fa-1x"></i>&nbsp;&nbsp;Notícias</a>
+			<a href="<?php echo get_site_url(); ?>/o-universo/"><i class="fa fa-globe fa-1x"></i>&nbsp;&nbsp;O Universo</a>
+			<a href="<?php echo get_site_url(); ?>/comunidade/"><i class="fa fa-users fa-1x"></i>&nbsp;&nbsp;Comunidade</a>
+			<a href="<?php echo get_site_url(); ?>/o-site/"><i class="fa fa-code fa-1x"></i>&nbsp;&nbsp;O Site</a>
 		</nav>
 		<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/classie.js"></script>
 		<script>
