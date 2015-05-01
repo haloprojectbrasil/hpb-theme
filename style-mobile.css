@@ -1,16 +1,3 @@
-/*
-Theme Name: Halo Project Brasil Theme
-Theme URI: http://github.com/germanocorrea/hpb-theme
-Author: Germano Corrêa
-Author URI: http://coffeebased.esy.es/
-Description: Tema criado para o website Halo Project Brasil
-Version: 2.0
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: halo project brasil
-Text Domain:
-*/
-
 body {
     font-family: 'Abel', sans-serif;
     background-color:black;
@@ -32,21 +19,19 @@ a:hover {
 }
 
 .header-img {
-  width:100%;
-  margin-top:-7px;
-}
-
-.header-img-mobile {
   width:0px;
   height:0px;
 }
 
+.header-img-mobile {
+  margin-bottom:1em;
+}
+
 .main_box {
     color:white;
-    margin:15px;
-    margin-top:0px;
+    margin-left:0px;
     float:left;
-    width:65%;
+    width:100%;
 }
 .main_box a {
     font-size:20px;
@@ -66,8 +51,9 @@ a:hover {
     background-color:#010716;
     border-bottom:solid 5px;
     border-bottom-color:#F15A24;
-    padding:3em;
-    margin:4em 10em 10em;
+    margin:0px;
+    margin-left:-5px;
+    padding:10px;
 
 }
 .box img{
@@ -76,7 +62,7 @@ a:hover {
 }
 
 .box p {
-    font-size:25px;
+    font-size:23px;
 }
 
 .box h1 {
@@ -84,7 +70,7 @@ a:hover {
     border-left:solid 5px;
     border-left-color:#F15A24;
     padding-left:6px;
-    font-size:4em;
+    font-size:2em;
 }
 #content {
     background-color: #010716;
@@ -96,41 +82,35 @@ a:hover {
 .box-front {
     color:white;
     background-color:#010716;
-    height:15em;
-    margin-bottom:1em;
+    width:100%;
+    margin-left:0px;
+    height:20em;
+    display:block;
+}
+.box-front #thumb-img {
+    width:100%;
+    height:50%;
 }
 .box-front:hover {
     background-color:#060F28;
 }
-.box-front #thumb-img {
-    width:40%;
-    height:100%;
-    float:left;
-}
-.box-front img {
-    width: 100%;
-    height: 100%;
-}
 .box-front #box-front-text {
-    width:57%;
-    float:right;
-}
-.box-front #box-front-text h2 {
-    font-size:1.3em;
+    width:100%;
+    height:40%;
+    display:block;
 }
 .archive_box {
     color:white;
     background-color:#010716;
-    margin:2em;
-    width:18em;
+    width:101%;
+    margin-left:-5px;
     height:20em;
-    float:left;
     display:block
 }
 .archive_box:hover {
     background-color:#060F28;
 }
-.archive_box h1 {
+.archive_box h2 {
     border-left: solid 5px;
     border-left-color:#F15A24;
     padding-left: 5px;
@@ -143,10 +123,10 @@ a:hover {
 .archive_box #archive_content {
     padding:0.4em;
 }
-.archive_box #archive_content h1 {
+.archive_box #archive_content h2 {
     margin-top:0.02em;
     margin-bottom:0.02em;
-    font-size:1em;
+    font-size:2em;
 }
 
 
@@ -155,9 +135,8 @@ a:hover {
     height:60%;
 }
 .side {
-    float: right;
-    margin-right: 15px;
-    width: 30%;
+    margin-right:0px;
+    width: 100%;
 }
 .sidebar {
     background-color:#010716;
@@ -176,7 +155,7 @@ a:hover {
     height:18em;
 }
 .box-nav {
-    font-size:4em;
+    font-size:3em;
     color:#eeebeb;
     margin:0.5em;
     margin-top:1.5em;
@@ -232,6 +211,9 @@ a:hover {
 .search {
     float:right;
     padding:1em;
+    position:absolute;
+    left:-20000em;
+
 }
 
 .search .screen-reader-text {

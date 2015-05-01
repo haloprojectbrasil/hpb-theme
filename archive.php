@@ -28,9 +28,9 @@
             }
         ?>
         <div id="archive_content">
-            <h1>
+            <h2>
             <?php the_title(); ?>
-            </h1>
+            </h2>
             <?php the_category(); ?>
             <?php the_author(); ?>
             <?php the_date(); ?>

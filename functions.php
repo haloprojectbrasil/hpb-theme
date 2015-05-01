@@ -12,4 +12,12 @@ function baw_hack_wp_title_for_home( $title )
     }
     return $title;
 }
+if ( function_exists('register_sidebar') )
+	register_sidebar(array(
+	'name' => 'sidebar',
+	'before_widget' => '<div class="sidebar">',
+	'after_widget' => '</div>',
+	'before_title' => '<h2>',
+	'after_title' => '</h2>',
+));
 ?>
