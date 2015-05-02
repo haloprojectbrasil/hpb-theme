@@ -132,12 +132,12 @@ a:hover {
 .archive_box:hover {
     background-color:#060F28;
 }
-.archive_box h1 {
+.archive_box h2 {
     border-left: solid 5px;
     border-left-color:#F15A24;
     padding-left: 5px;
     padding-bottom: 0px;
-    margin-bottom: 0px;
+    margin: 0px;
     margin-left:5px;
 }
 
