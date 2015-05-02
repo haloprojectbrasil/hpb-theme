@@ -51,7 +51,7 @@ a:hover {
     font-size:20px;
 }
 
-.main_box #feed_container h1, .main_box #feed_container ul,#box-front-text ul, .box .innerCategory ul{
+.main_box #feed_container h1, .main_box #feed_container ul,#box-front-text ul, .archive_box ul, .box .innerCategory ul{
     width:30em;
     margin:0px;
     padding:0px;
