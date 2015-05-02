@@ -2,12 +2,13 @@
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="box">
         <h1>
-        <?php the_title(); ?>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </h1>
-        <?php the_category(); ?>
+        <div class="innerCategory">
+            <?php the_category(); ?>
+        </div>
         <?php the_author(); ?>
         <?php the_date(); ?>
-        <?php the_content(); ?>
     </div>
 <?php endwhile; ?>
 <?php endif; ?>

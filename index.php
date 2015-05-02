@@ -1,6 +1,9 @@
 <?php get_header(); ?>
   <div class="header">
-    <a href="<?php echo get_site_url(); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" width="100%"/></a>
+    <a href="<?php echo get_site_url(); ?>">
+      <img class="header-img" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/logo.png" width="100%"/>
+      <img class="header-img-mobile" src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Logo-HPB.png" width="100%"/>
+    </a>
   </div>
     <div class="main_box">
     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -17,10 +20,12 @@
 	                ?>
 	            </div>
                 <div id="box-front-text">
-                    <h1>
+                    <h2>
                     <?php the_title(); ?>
-                    </h1>
-                    <?php the_category(); ?>
+                    </h2>
+                    <div class="innerCategory">
+                        <?php the_category(); ?>
+                    </div>
                     <?php the_author(); ?>,
                     <?php the_date(); ?>
                 </div>
@@ -28,11 +33,11 @@
     </a>
     <?php endwhile; ?>
     <?php endif; ?>
-    <center>
-    <div class="postSet">
-        <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
-    </div>
-    </center>
     </div>
 <?php get_sidebar(); ?>
+<center>
+<div class="postSet">
+    <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
+</div>
+</center>
 <?php get_footer(); ?>

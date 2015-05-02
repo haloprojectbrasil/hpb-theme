@@ -7,7 +7,7 @@ Description: Tema criado para o website Halo Project Brasil
 Version: 2.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Tags: halo project brasil
+Tags: haloprojectbrasil, halo, project, brasil, brazil
 Text Domain:
 */
 
@@ -28,7 +28,6 @@ a:hover {
     text-decoration:underline;
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
-    transition: all 0.8s ease;
 }
 
 .header-img {
@@ -52,11 +51,14 @@ a:hover {
     font-size:20px;
 }
 
-.main_box #feed_container h1,ul{
+.main_box #feed_container h1, .main_box #feed_container ul,#box-front-text ul, .box .innerCategory ul{
     width:30em;
-    margin:1px;
-    padding:1px;
-    list-style-type:none
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+.box .innerText ul li {
+    font-size:1.5em;
 }
 .main_box #feed_container ul a {
     color:white;
@@ -171,6 +173,7 @@ a:hover {
     border-left: solid 5px;
     border-left-color:#F15A24;
     padding-left: 5px;
+    font-size:2em;
 }
 .sidebar #youtubeSide {
     height:18em;
@@ -183,9 +186,10 @@ a:hover {
 }
 .postSet {
     color:white;
-    align:center;
     margin:5em;
     font-size:1.5em;
+    clear:both;
+    display:block;
 }
 .postSet a {
     background-color:#010716;

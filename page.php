@@ -4,10 +4,14 @@
         <h1>
         <?php the_title(); ?>
         </h1>
-        <?php the_category(); ?>
-        <?php the_author(); ?>
+        <div class="innerCategory">
+            <?php the_category(); ?>
+        </div>
+        <?php the_author(); ?>,
         <?php the_date(); ?>
-        <?php the_content(); ?>
+        <div class="innerText">
+            <?php the_content(); ?>
+        </div>
         <?php comments_template(); ?>
     </div>
 <?php endwhile; ?>

@@ -23,7 +23,9 @@
                     <h2>
                     <?php the_title(); ?>
                     </h2>
-                    <?php the_category(); ?>
+                    <div class="innerCategory">
+                        <?php the_category(); ?>
+                    </div>
                     <?php the_author(); ?>,
                     <?php the_date(); ?>
                 </div>
@@ -31,11 +33,11 @@
     </a>
     <?php endwhile; ?>
     <?php endif; ?>
-    <center>
-    <div class="postSet">
-        <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
-    </div>
-    </center>
     </div>
 <?php get_sidebar(); ?>
+<center>
+<div class="postSet">
+    <?php previous_posts_link(); ?>  <?php next_posts_link(); ?>
+</div>
+</center>
 <?php get_footer(); ?>

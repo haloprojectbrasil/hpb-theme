@@ -37,11 +37,14 @@ a:hover {
     font-size:20px;
 }
 
-.main_box #feed_container h1,ul{
+.main_box #feed_container h1, .main_box #feed_container ul, #box-front-text ul, .box .innerCategory ul{
     width:30em;
-    margin:1px;
-    padding:1px;
-    list-style-type:none
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+.box .innerText ul li {
+    font-size:1.5em;
 }
 .main_box #feed_container ul a {
     color:white;
@@ -162,9 +165,10 @@ a:hover {
 }
 .postSet {
     color:white;
-    align:center;
     margin:5em;
     font-size:1.5em;
+    clear:both;
+    display:block;
 }
 .postSet a {
     background-color:#010716;
