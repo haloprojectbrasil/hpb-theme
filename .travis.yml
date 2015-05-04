@@ -6,3 +6,4 @@ php:
   - hhvm
   - nightly
 sudo: required
+install: /home/travis/.phpenv/versions/5.4/bin/composer self-update
