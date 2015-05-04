@@ -82,6 +82,10 @@ a:hover {
 
 }
 
+div[style="text-align: justify;"] {
+    font-size:1.5em
+}
+
 .box p {
     font-size:25px;
 }
