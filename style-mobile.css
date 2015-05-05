@@ -45,8 +45,8 @@ a:hover {
 .main_box a {
     font-size:20px;
 }
-div[style="text-align: justify;"] {
-    font-size:1.5em
+div[style="text-align: justify;"], div[style="clear: both; text-align: justify;"] {
+    font-size:1.55em
 }
 .box img, .box frame, .box iframe {
     width:90%;
@@ -58,7 +58,7 @@ div[style="text-align: justify;"] {
     list-style-type:none;
 }
 .box .innerText ul li {
-    font-size:1.5em;
+    font-size:1.55em;
 }
 .main_box #feed_container ul a {
     color:white;
@@ -75,7 +75,7 @@ div[style="text-align: justify;"] {
 }
 
 .box p {
-    font-size:23px;
+    font-size:1.5em;
 }
 
 .box h1 {
