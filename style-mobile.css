@@ -48,6 +48,9 @@ a:hover {
 div[style="text-align: justify;"] {
     font-size:1.5em
 }
+.box img, .box frame, .box iframe {
+    width:90%;
+}
 .main_box #feed_container h1, .main_box #feed_container ul, #box-front-text ul, .archive_box ul, .box .innerCategory ul{
     width:30em;
     margin:0px;
