@@ -1,0 +1,281 @@
+/*
+Theme Name: Halo Project Brasil Theme
+Theme URI: http://github.com/germanocorrea/hpb-theme
+Author: Germano Corrêa
+Author URI: http://coffeebased.esy.es/
+Description: Tema criado para o website Halo Project Brasil
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: haloprojectbrasil, halo, project, brasil, brazil
+Text Domain:
+*/
+
+/* Configuração do Wordpress Para Imagens */
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+a img.alignright {float:right; margin:0 0 1em 1em}
+a img.alignleft {float:left; margin:0 1em 1em 0}
+a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+/*Final da configuração*/
+
+body {
+    font-family: 'Abel', sans-serif;
+    background-color:black;
+}
+hr {
+    border-color:#686868;
+
+}
+a {
+    color:white;
+    text-decoration:none;
+}
+a:hover {
+    color:white;
+    text-decoration:underline;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+}
+
+.header-img {
+  width:100%;
+  margin-top:-7px;
+}
+
+.header-img-mobile {
+  width:0px;
+  height:0px;
+}
+
+.main_box {
+    color:white;
+    margin:15px;
+    margin-top:0px;
+    float:left;
+    width:65%;
+}
+.main_box a {
+    font-size:20px;
+}
+
+.main_box #feed_container h1, .main_box #feed_container ul,#box-front-text ul, .archive_box ul, .box .innerCategory ul{
+    width:30em;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+.box .innerText ul li {
+    font-size:1.5em;
+}
+.main_box #feed_container ul a {
+    color:white;
+}
+.box {
+    color:white;
+    background-color:#010716;
+    border-bottom:solid 5px;
+    border-bottom-color:#F15A24;
+    padding:3em;
+    margin:4em 10em 10em;
+
+}
+
+.box p {
+    font-size:25px;
+}
+
+.box h1 {
+    font-family: 'Abel', sans-serif;
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    padding-left:6px;
+    font-size:4em;
+}
+#content {
+    background-color: #010716;
+    padding:1em;
+}
+#widget_box {
+    position:relative;
+}
+.box-front {
+    color:white;
+    background-color:#010716;
+    height:15em;
+    margin-bottom:1em;
+}
+.box-front:hover {
+    background-color:#060F28;
+}
+.box-front #thumb-img {
+    width:40%;
+    height:100%;
+    float:left;
+}
+.box-front img {
+    width: 100%;
+    height: 100%;
+}
+.box-front #box-front-text {
+    width:57%;
+    float:right;
+}
+.box-front #box-front-text h2 {
+    font-size:1.3em;
+}
+.archive_box {
+    color:white;
+    background-color:#010716;
+    margin:2em;
+    width:18em;
+    height:20em;
+    float:left;
+    display:block
+}
+.archive_box:hover {
+    background-color:#060F28;
+}
+.archive_box h2 {
+    padding-bottom: 0px;
+    margin: 0px;
+    font-size:1.3em;
+}
+
+
+.archive_box #archive_content {
+    padding:0.4em;
+}
+.archive_box #archive_content h1 {
+    margin-top:0.02em;
+    margin-bottom:0.02em;
+    font-size:1em;
+}
+
+
+.archive_box img {
+    width:100%;
+    height:60%;
+}
+.side {
+    float: right;
+    margin-right: 15px;
+    width: 30%;
+}
+.sidebar {
+    background-color:#010716;
+    color: white;
+    padding: 15px;
+    padding-top: 2px;
+    margin-bottom: 30px;
+}
+
+.sidebar h2 {
+    border-left: solid 5px;
+    border-left-color:#F15A24;
+    padding-left: 5px;
+    font-size:2em;
+}
+.sidebar #youtubeSide {
+    height:18em;
+}
+.box-nav {
+    font-size:4em;
+    color:#eeebeb;
+    margin:0.5em;
+    margin-top:1.5em;
+}
+.postSet {
+    color:white;
+    margin:5em;
+    font-size:1.5em;
+    clear:both;
+    display:block;
+}
+.postSet a {
+    background-color:#010716;
+    padding:1em;
+    margin:1em;
+    text-decoration:none;
+    display:inline-block;
+}
+.postSet a:hover {
+    background-color:#060F28;
+}
+.footer {
+    background:#060F28;
+    width:100%;
+}
+.footer #footer-area {
+    color:white;
+    float: left;
+    text-align: center;
+    margin-left:2.1em;
+}
+.footer #footer-area h1 {
+    text-align: left !important;
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    padding-left:5px;
+    margin-left:3px;
+    font-size:2em;
+}
+.footer #footer-area p {
+    background-color:transparent;
+    font-size:15px;
+}
+.side .sidebar #social {
+    width:15%;
+    padding:0px;
+    margin:0px;
+}
+.footer #footer-area #link {
+    padding-top:1em;
+    padding-bottom:1em;
+    font-size:1.2em;
+}
+.search {
+    float:right;
+    padding:1em;
+}
+
+.search .screen-reader-text {
+    color:#060F28;
+}
+
+.search #s {
+    background-color:#C9C9C9;
+    color:black;
+    border:none;
+    height:1.8em;
+}
+.search #searchsubmit {
+    border:none;
+    height:1.9em;
+}
+.cbp-spmenu .user {
+    color:white;
+    background-color:#060F28;
+}
+
+
+.menu_button {
+	background-color:transparent;
+	border:none;
+}
+
+header .bar{
+    width:101.5%;
+    height:60px;
+    display:block;
+    position:relative;
+    top:-7px;
+    left:-7px;
+    background-color:#060F28;
+}
+header .bar button {
+    color:white;
+    padding:1em;
+    float:left;
+}
