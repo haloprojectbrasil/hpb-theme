@@ -81,6 +81,9 @@ a:hover {
     margin:4em 10em 10em;
 
 }
+.box a {
+    color:#3CC;
+}
 div[style="text-align: justify;"] {
     font-size:1.55em
 }
@@ -94,6 +97,15 @@ div[style="text-align: justify;"] {
     border-left-color:#F15A24;
     padding-left:6px;
     font-size:4em;
+}
+strong {
+    font-weight: bold;
+}
+.box h2 {
+    border-left:solid 5px;
+    border-left-color:#F15A24;
+    padding-left:6px;
+    font-size: 2.4em;
 }
 #content {
     background-color: #010716;
