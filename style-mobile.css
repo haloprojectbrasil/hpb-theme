@@ -1,100 +1,36 @@
-/* Configuração do Wordpress Para Imagens */
-img.alignright {float:right; margin:0 0 1em 1em}
-img.alignleft {float:left; margin:0 1em 1em 0}
-img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-a img.alignright {float:right; margin:0 0 1em 1em}
-a img.alignleft {float:left; margin:0 1em 1em 0}
-a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
-/*Final da configuração*/
-
-body {
-    font-family: 'Abel', sans-serif;
-    background-color:black;
-}
-hr {
-    border-color:#686868;
-
-}
-a {
-    color:white;
-    text-decoration:none;
-}
-a:hover {
-    color:white;
-    text-decoration:underline;
-    -webkit-transition: all 0.8s ease;
-    -moz-transition: all 0.8s ease;
-    transition: all 0.8s ease;
-}
-
 .header-img {
   width:0px;
   height:0px;
 }
 
 .header-img-mobile {
+    /*preciso acabar*/
   margin-bottom:1em;
 }
 
 .main_box {
-    color:white;
-    margin-left:0px;
-    float:left;
+    margin:0px;
     width:100%;
-}
-.main_box a {
-    font-size:20px;
-}
-div[style="text-align: justify;"], div[style="clear: both; text-align: justify;"] {
-    font-size:1.55em
 }
 .box img, .box frame, .box iframe {
     width:90%;
 }
-.main_box #feed_container h1, .main_box #feed_container ul, #box-front-text ul, .archive_box ul, .box .innerCategory ul{
-    width:30em;
-    margin:0px;
-    padding:0px;
-    list-style-type:none;
-}
-.box .innerText ul li {
-    font-size:1.55em;
-}
-.main_box #feed_container ul a {
-    color:white;
-}
 .box {
-    color:white;
-    background-color:#010716;
-    border-bottom:solid 5px;
-    border-bottom-color:#F15A24;
     margin:0px;
     margin-left:-5px;
     padding:10px;
-
 }
-
 .box p {
-    font-size:1.55em;
+    font-size:1.3em;
 }
-
 .box h1 {
-    font-family: 'Abel', sans-serif;
-    border-left:solid 5px;
-    border-left-color:#F15A24;
-    padding-left:6px;
-    font-size:2em;
+    font-size:3em;
 }
-#content {
-    background-color: #010716;
-    padding:1em;
-}
-#widget_box {
-    position:relative;
+.box h2 {
+    font-size:1.8em;
+    clear:both;
 }
 .box-front {
-    color:white;
-    background-color:#010716;
     width:100%;
     margin-left:0px;
     height:20em;
@@ -104,7 +40,7 @@ div[style="text-align: justify;"], div[style="clear: both; text-align: justify;"
     width:100%;
     height:50%;
 }
-.box-front:hover {
+.box-front:active {
     background-color:#060F28;
 }
 .box-front #box-front-text {
@@ -113,156 +49,27 @@ div[style="text-align: justify;"], div[style="clear: both; text-align: justify;"
     display:block;
 }
 .archive_box {
-    color:white;
-    background-color:#010716;
     width:101%;
     margin-left:-5px;
-    height:20em;
-    display:block
 }
-.archive_box:hover {
+.archive_box:active {
     background-color:#060F28;
 }
-.archive_box h2 {
-    padding-bottom: 0px;
-    margin: 0px;
-}
-
-
-.archive_box #archive_content {
-    padding:0.4em;
-}
-.archive_box #archive_content h2 {
-    margin-top:0.02em;
-    margin-bottom:0.02em;
-    font-size:2em;
-}
-
-
-.archive_box img {
-    width:100%;
-    height:60%;
-}
 .side {
-    margin-right:0px;
-    width: 100%;
-}
-.sidebar {
-    background-color:#010716;
-    color: white;
-    padding: 15px;
-    padding-top: 2px;
-    margin-bottom: 30px;
-}
-
-.sidebar h2 {
-    border-left: solid 5px;
-    border-left-color:#F15A24;
-    padding-left: 5px;
-}
-.sidebar #youtubeSide {
-    height:18em;
+    display:none;
 }
 .box-nav {
     font-size:3em;
-    color:#eeebeb;
-    margin:0.5em;
-    margin-top:1.5em;
-}
-.postSet {
-    color:white;
-    margin:5em;
-    font-size:1.5em;
-    clear:both;
-    display:block;
 }
 .postSet a {
-    background-color:#010716;
-    padding:1em;
-    margin:1em;
-    text-decoration:none;
     clear:both;
-    display:inline-block;
 }
-.postSet a:hover {
+.postSet a:active {
     background-color:#060F28;
-}
-.footer {
-    background:#060F28;
-    width:100%;
-}
-.footer #footer-area {
-    color:white;
-    float: left;
-    text-align: center;
-    margin-left:2.1em;
-}
-.footer #footer-area h1 {
-    text-align: left !important;
-    border-left:solid 5px;
-    border-left-color:#F15A24;
-    padding-left:5px;
-    margin-left:3px;
-    font-size:2em;
-}
-.footer #footer-area p {
-    background-color:transparent;
-    font-size:15px;
-}
-.side .sidebar #social {
-    width:15%;
-    padding:0px;
-    margin:0px;
-}
-.footer #footer-area #link {
-    padding-top:1em;
-    padding-bottom:1em;
-    font-size:1.2em;
 }
 .search {
-    float:right;
-    padding:1em;
-    position:absolute;
-    left:-20000em;
-
+    display:none;
 }
-
-.search .screen-reader-text {
-    color:#060F28;
-}
-
-.search #s {
-    background-color:#C9C9C9;
-    color:black;
-    border:none;
-    height:1.8em;
-}
-.search #searchsubmit {
-    border:none;
-    height:1.9em;
-}
-.cbp-spmenu .user {
-    color:white;
-    background-color:#060F28;
-}
-
-
-.menu_button {
-	background-color:transparent;
-	border:none;
-}
-
-header .bar{
-    width:101.5%;
-    height:60px;
-    display:block;
-    position:relative;
-    top:-7px;
-    left:-7px;
-    background-color:#060F28;
-}
-header .bar button {
-    color:white;
-    padding:1em;
-    float:left;
+.footer #footer-area {
+    margin-left:0px;
 }

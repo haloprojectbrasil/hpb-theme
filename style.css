@@ -1,6 +1,6 @@
 /*
 Theme Name: Halo Project Brasil Theme
-Theme URI: http://github.com/germanocorrea/hpb-theme
+Theme URI: http://github.com/haloprojectbrasil/hpb-theme
 Author: Germano Corrêa
 Author URI: http://coffeebased.esy.es/
 Description: Tema criado para o website Halo Project Brasil
@@ -19,21 +19,22 @@ a img.alignright {float:right; margin:0 0 1em 1em}
 a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 /*Final da configuração*/
-
+html {
+    background-color:black;
+}
 body {
     font-family: 'Abel', sans-serif;
-    background-color:black;
+    background:url('');
 }
 hr {
     border-color:#686868;
 
 }
 a {
-    color:white;
+    color:#3cc;
     text-decoration:none;
 }
 a:hover {
-    color:white;
     text-decoration:underline;
     -webkit-transition: all 0.8s ease;
     -moz-transition: all 0.8s ease;
@@ -84,7 +85,7 @@ a:hover {
 .box a {
     color:#3CC;
 }
-div[style="text-align: justify;"] {
+div[style="text-align: justify;"], div[style="clear: both; text-align: justify;"] {
     font-size:1.55em
 }
 .box p {
@@ -119,6 +120,9 @@ strong {
     background-color:#010716;
     height:15em;
     margin-bottom:1em;
+}
+.box-front a{
+    color:white;
 }
 .box-front:hover {
     background-color:#060F28;
@@ -156,18 +160,14 @@ strong {
     margin: 0px;
     font-size:1.3em;
 }
-
-
 .archive_box #archive_content {
     padding:0.4em;
 }
-.archive_box #archive_content h1 {
+.archive_box #archive_content h2 {
     margin-top:0.02em;
     margin-bottom:0.02em;
-    font-size:1em;
+    font-size:2em;
 }
-
-
 .archive_box img {
     width:100%;
     height:60%;
@@ -213,6 +213,7 @@ strong {
     margin:1em;
     text-decoration:none;
     display:inline-block;
+    color:white;
 }
 .postSet a:hover {
     background-color:#060F28;
@@ -220,6 +221,7 @@ strong {
 .footer {
     background:#060F28;
     width:100%;
+    clear:both;
 }
 .footer #footer-area {
     color:white;
