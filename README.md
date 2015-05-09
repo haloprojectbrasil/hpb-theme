@@ -1,6 +1,5 @@
 hpb-theme
 =========
-[![Build Status](https://travis-ci.org/haloprojectbrasil/hpb-theme.svg?branch=master)](https://travis-ci.org/haloprojectbrasil/hpb-theme)
 
 Wordpress Theme do website Halo Project Brasil.
 
