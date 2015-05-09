@@ -1,9 +1,7 @@
 language: php
 sudo: required
 env:
-    - RUN=phpunit
     - RUN=vendor/bin/phpunit
-    - RUN=vendor/bin/phing
 
 script: ${RUN}
 
