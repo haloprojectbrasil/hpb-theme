@@ -295,3 +295,7 @@ header .bar button {
     padding:1em;
     float:left;
 }
+.js-alert {
+    color:white;
+    font-size:2em;
+}

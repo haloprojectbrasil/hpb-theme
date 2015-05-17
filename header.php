@@ -47,6 +47,11 @@
         <header>
 			<div class="bar">
                 <button id="showLeftPush" class="menu_button"><i class="fa fa-navicon fa-2x"></i></button>
+                <noscript>
+                    <div class="js-alert">
+                        Por favor, habilite JavaScript para poder visualizar melhor esta página
+                    </div>
+                </noscript>
                 <div class="search">
                     <?php
                         $search_form=get_search_form();
