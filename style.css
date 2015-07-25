@@ -150,9 +150,16 @@ strong {
     background-color:#010716;
     margin:2em;
     width:18em;
-    height:20em;
+    height:22em;
     float:left;
-    display:block
+    display:block;
+    overflow: hidden;
+}
+.archive_box a {
+    color:white;
+}
+.archive_box a:hover {
+    text-decoration: underline;
 }
 .archive_box:hover {
     background-color:#060F28;
@@ -161,6 +168,7 @@ strong {
     padding-bottom: 0px;
     margin: 0px;
     font-size:1.3em;
+    text-align: center;
 }
 .archive_box #archive_content {
     padding:0.4em;
@@ -168,7 +176,7 @@ strong {
 .archive_box #archive_content h2 {
     margin-top:0.02em;
     margin-bottom:0.02em;
-    font-size:2em;
+    text-align: left;
 }
 .archive_box img {
     width:100%;
@@ -221,7 +229,6 @@ strong {
     background-color:#060F28;
 }
 .footer {
-    background:#060F28;
     width:100%;
     clear:both;
 }
@@ -229,7 +236,11 @@ strong {
     color:white;
     float: left;
     text-align: center;
-    margin-left:2.1em;
+    padding: 10em;
+    padding-bottom:1em;
+    padding-top:0px;
+    margin-bottom:1em;
+    vertical-align: middle;
 }
 .footer #footer-area h1 {
     text-align: left !important;
