@@ -312,3 +312,14 @@ header .bar button {
     color:white;
     font-size:2em;
 }
+.sidebar h2 > a {
+    color: white;
+    text-decoration: none;
+}
+.sidebar h2 > a:hover {
+    color: white;
+    text-decoration: none;
+}
+.searchform .screen-reader-text {
+    position: absolute; left: -99999em;
+}
