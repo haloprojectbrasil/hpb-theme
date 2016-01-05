@@ -323,3 +323,7 @@ header .bar button {
 .searchform .screen-reader-text {
     position: absolute; left: -99999em;
 }
+.box img {
+    max-width: 100% !important;
+    height: auto !important;
+}
