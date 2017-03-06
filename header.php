@@ -18,18 +18,10 @@
         <header id="header">
             <div class="top-bar" id="firstheader">
                 <div class="top-bar-left">
-                    <h1><a href="<?php echo home_url('/'); ?>">Halo Project Brasil</a></h1>
+                    <img src="<?php header_image(); ?>" class="header-img">
                 </div>
-                <div class="top-bar-right">
-                    <ul class="menu" style="font-size: 1.5em;">
-                        <li><a href="https://facebook.com/TheHaloProjectBR"><i class="fi fi-social-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/haloprojectbr"><i class="fi fi-social-twitter"></i></a></li>
-                        <li><a href="https://instagram.com/haloprojectbr/"><i class="fi fi-social-instagram"></i></a></li>
-                        <li><a href="https://youtube.com/user/haloprojectbr"><i class="fi fi-social-youtube"></i></a></li>
-                        <li><a href="https://plus.google.com/+HaloProjectBrasil"><i class="fi fi-social-google-plus"></i></a></li>
-                        <li><a href="https://github.com/haloprojectbrasil/"><i class="fi fi-social-github"></i></a></li>
-                    </ul>
-                </div>
+                <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("header-one")):?>
+                <?php endif; ?>
             </div>
         </header>
         <div class="top-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
@@ -43,6 +35,8 @@
                             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
                         </nav>
                     </div>
+                    <?php  // if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("header-two")):?>
+                    <?php // endif; ?>
                     <div class="top-bar-right">
                         <span class="search-form">
                             <form class="search" action="<?php echo home_url( '/' ); ?>" method="get">

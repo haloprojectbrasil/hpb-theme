@@ -44,6 +44,11 @@ h2 {
     font-family: "Abel", sans-serif !important;
 }
 
+.header-img {
+    max-height: 80px;
+    width: auto;
+}
+
 #first {
     box-shadow: unset;
 }
