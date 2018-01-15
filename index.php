@@ -1,6 +1,6 @@
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
     <div class="row" style="margin-top: 1em;">
-        <div class="medium-12 column">
+        <div class="medium-10 medium-offset-1 column">
             <?php if ( have_posts() ) : ?>
             <?php $temp_query = clone $wp_query; ?>
 

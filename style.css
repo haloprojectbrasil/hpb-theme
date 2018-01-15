@@ -23,6 +23,7 @@ a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 html, body {
     font-family: "Abel", sans-serif !important;
     overflow-x: hidden;
+    background-color: #DEDEDE;
 }
 
 header h1 {

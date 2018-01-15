@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div class="row">
+<div class="row medium-10 medium-offset-1">
     <h2>
     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
     <?php /* If this is a category archive */ if (is_category()) { ?>

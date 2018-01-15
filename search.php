@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <br>
-<div class="row">
+<div class="row medium-10 medium-offset-1">
     <?php while ( have_posts() ) : the_post(); ?>
         <div class="medium-4 small-12 column post-container">
             <a href="<?php the_permalink(); ?>">
