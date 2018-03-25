@@ -3,6 +3,7 @@
 <head>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="<?php echo esc_url( get_template_directory_uri() ); ?>/img/favicon.png">
     <!--            <meta name="google-site-verification" content="6Pkqh-J0wTzq92nbuMijOwzTrCAKAyO_8qtsRjmQUGI" />-->
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <title><?php wp_title(''); ?></title>
@@ -14,22 +15,32 @@
     <?php wp_head(); ?>
 </head>
 <body class="<?php body_class(); ?>">
+    <div class="top-bar top-bar-alt" style="padding: 0; background-color: #000F21; color: white; font-size: 0.8em">
+        <div class="top-bar-left">
+            <ul class="menu social-menu" style="">
+            <li><a href="https://facebook.com/TheHaloProjectBR" target="_blank"><i class="fi fi-social-facebook"></i></a></li>
+            <li><a href="https://twitter.com/haloprojectbr" target="_blank"><i class="fi fi-social-twitter"></i></a></li>
+            <li><a href="https://instagram.com/haloprojectbr/" target="_blank"><i class="fi fi-social-instagram"></i></a></li>
+            <li><a href="https://youtube.com/user/haloprojectbr" target="_blank"><i class="fi fi-social-youtube"></i></a></li>
+            <li><a href="https://plus.google.com/+HaloProjectBrasil" target="_blank"><i class="fi fi-social-google-plus"></i></a></li>
+            <li><a href="https://github.com/haloprojectbrasil/" target="_blank"><i class="fi fi-social-github"></i></a></li>
+        </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><a href="<?php echo site_url(); ?>/">Sobre</a></li>
+                <li><a href="<?php echo site_url(); ?>/">Contato</a></li>
+                <li><a href="<?php echo site_url(); ?>/wp-admin">Administração</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="headers">
-        <header id="header">
-            <div class="top-bar" id="firstheader">
-                <div class="top-bar-left">
-                    <img src="<?php header_image(); ?>" class="header-img">
-                </div>
-                <?php  if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("header-one")):?>
-                <?php endif; ?>
-            </div>
-        </header>
-        <div class="top-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
+        <div class="top-bar" data-responsive-toggle="sticky-menu" data-hide-for="medium">
             <button type="button" style="color: white" data-toggle><i class="fi fi-list" style="font-size: 1.3em;"></i> Navegação</button>
         </div>
-        <div data-sticky-container style="z-index: 500;">
-            <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="footer:bottom">
-                <div class="top-bar" id="example-animated-menu" data-animate="fade-in fade-out">
+        <div style="z-index: 500;">
+            <div data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="footer:bottom">
+                <div class="top-bar" id="sticky-menu" data-animate="fade-in fade-out">
                     <div class="top-bar-left">
                         <nav id="nav">
                             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>

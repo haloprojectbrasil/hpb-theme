@@ -1,5 +1,17 @@
-<?php get_header(); ?>
-
+<?php
+get_header();
+foreach (get_the_category() as $catObj) {
+    if ($catObj->name == single_cat_title("", false)) {
+        $cat = $catObj;
+    }
+}
+$url = getHeaderImg($cat);
+?>
+<header id="header">
+    <div id="firstheader">
+        <img src="<?php echo $url; ?>" class="header-img">
+    </div>
+</header>
 <div class="row medium-10 medium-offset-1">
     <h2>
     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -14,7 +26,7 @@
     <?php /* If this is an author archive */ } elseif (is_author()) { ?>
         Arquivo do Autor
     <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-        Arquivo do Blog
+        Arquivo do Site
     <?php } ?>
     </h2>
 
@@ -46,7 +58,7 @@
             <?php endwhile; ?>
     </div>
     <div class="row align-center">
-        <div class="small-2 columns text-center" id="prevnext">
+        <div class="small-12 columns text-center" id="prevnext">
             <?php previous_posts_link(); ?> <?php next_posts_link(); ?>
         </div>
     </div>

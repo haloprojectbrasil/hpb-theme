@@ -1,3 +1,19 @@
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scroll-top-btn").style.display = "block";
+    } else {
+        document.getElementById("scroll-top-btn").style.display = "none";
+    }
+}
+
+function jumpTop() {
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
+
 $('#nav').find('ul').removeClass();
 $('#nav').find('ul').removeAttr('id');
 $('#nav').find('ul').removeAttr('class');

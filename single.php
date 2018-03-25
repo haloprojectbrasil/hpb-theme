@@ -11,7 +11,7 @@
         <?php the_category(); ?>
     </div>
 </div>
-<div class="row page-row align-center" style="margin-top: -6em;">
+<div class="row page-row align-center" style="margin-top: -14em;">
     <div class="medium-8 small-12 column small-centered">
         <div class="medium-12 callout page-callout">
             <?php the_content(); ?>

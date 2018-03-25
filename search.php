@@ -1,4 +1,9 @@
 <?php get_header(); ?>
+<header id="header">
+    <div id="firstheader">
+        <img src="<?php header_image(); ?>" class="header-img">
+    </div>
+</header>
 <br>
 <div class="row medium-10 medium-offset-1">
     <?php while ( have_posts() ) : the_post(); ?>

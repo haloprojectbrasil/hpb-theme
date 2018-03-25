@@ -1,9 +1,15 @@
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
+<header id="header">
+    <div id="firstheader">
+        <img src="<?php header_image(); ?>" class="header-img">
+    </div>
+</header>
     <div class="row" style="margin-top: 1em;">
         <div class="medium-10 medium-offset-1 column">
             <?php if ( have_posts() ) : ?>
             <?php $temp_query = clone $wp_query; ?>
-
+            <!-- <h2><i class="fi-web"></i> Principais Matérias</h2> -->
+            <h2><i class="fi-bookmark"></i> Principais Matérias</h2>
                 <div class="row medium-uncollapse large-collapse">
                     <?php query_posts( 'category_name=Destaque&posts_per_page=3' ); $count=0; ?>
                     <?php while ( have_posts() ) : the_post(); ?>
@@ -62,7 +68,7 @@
 
                     <?php query_posts( 'category_name=Notícias&posts_per_page=6' ); ?>
                     <hr>
-                    <h2><i class="fi fi-megaphone"></i> Úlltimas Notícias</h2>
+                    <h2><i class="fi-megaphone"></i> Úlltimas Notícias</h2>
                     <div class="row">
                         <?php while ( have_posts() ) : the_post(); ?>
                             <div class="medium-4 small-12 column post-container" style="height: 250px;">
@@ -91,7 +97,7 @@
 
                     <div class="row">
                         <div class="medium-8 columns">
-                            <h2><i class="fi fi-compass"></i> Halo, o Universo e Tudo Mais</h2>
+                            <h2><i class="fi-compass"></i> Halo, o Universo e Tudo Mais</h2>
                             <?php query_posts( 'category_name=Universo&posts_per_page=6' ); ?>
                             <div class="row">
                                 <?php while ( have_posts() ) : the_post(); ?>
@@ -118,7 +124,7 @@
                                     <?php endwhile; ?>
                             </div>
                             <hr>
-                            <h2><i class="fi fi-torsos-all-female"></i> Comunidade</h2>
+                            <h2><i class="fi-torsos-all-female"></i> Comunidade</h2>
                             <?php query_posts( 'category_name=Comunidade&posts_per_page=6' ); ?>
                             <div class="row">
                                 <?php while ( have_posts() ) : the_post(); ?>

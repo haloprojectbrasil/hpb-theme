@@ -1,5 +1,5 @@
 <?php
-//add_filter( 'show_admin_bar', '__return_false' );
+add_filter( 'show_admin_bar', '__return_false' );
 remove_action ('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
 add_theme_support( 'post-thumbnails' );
@@ -23,7 +23,7 @@ if ( function_exists('register_sidebar') )
     ));
     register_sidebar(array(
        'name' => 'header-one',
-	   'before_widget' => '<div class="top-bar-right">',
+	   'before_widget' => '<div class="top-bar-left">',
 	   'after_widget' => '</div>',
 	   'before_title' => '',
 	   'after_title' => '',
@@ -42,7 +42,30 @@ function register_my_menu() {
 add_action( 'init', 'register_my_menu' );
 
 add_theme_support( 'custom-header', array(
-    'default-image' => get_template_directory_uri() . '/img/Logo-HPB.png',
+    'default-image' => get_template_directory_uri() . '/img/banner-home.png',
     'uploads'       => true
 ));
-?>
+
+function getHeaderImg($catObject = false) {
+    $url = esc_url(get_header_image());
+    if ($catObject) {
+        $url = get_template_directory_uri() . '/img/' . $catObject->slug . '.jpg';
+        if (!file_exists(__DIR__ . '/img/' . $catObject->slug . '.jpg')) {
+            $url = get_template_directory_uri() . '/img/' . $catObject->slug . '.png';
+            if (!file_exists(__DIR__ . '/img/' . $catObject->slug . '.jpg')) {
+
+                $parent = get_category($catObject->category_parent);
+
+                $url = get_template_directory_uri() . '/img/' . $parent->slug . '.jpg';
+                if (!file_exists(__DIR__ . '/img/' . $parent->slug . '.jpg')) {
+                    $url = get_template_directory_uri() . '/img/' . $parent->slug . '.png';
+                    if (!file_exists(__DIR__ . '/img/' . $parent->slug . '.jpg')) {
+                        $url = esc_url(get_header_image());
+                    }
+                }
+
+            }
+        }
+    }
+    return $url;
+}
