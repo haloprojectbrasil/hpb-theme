@@ -18,7 +18,7 @@
     <div class="top-bar top-bar-alt" style="padding: 0; background-color: #000F21; color: white; font-size: 0.8em">
         <div class="top-bar-left">
             <ul class="menu social-menu" style="">
-            <li><a href="https://facebook.com/TheHaloProjectBR" target="_blank"><i class="fi fi-social-facebook"></i></a></li>
+            <li><a href="https://www.facebook.com/HaloProjectBrasil/" target="_blank"><i class="fi fi-social-facebook"></i></a></li>
             <li><a href="https://twitter.com/haloprojectbr" target="_blank"><i class="fi fi-social-twitter"></i></a></li>
             <li><a href="https://instagram.com/haloprojectbr/" target="_blank"><i class="fi fi-social-instagram"></i></a></li>
             <li><a href="https://youtube.com/user/haloprojectbr" target="_blank"><i class="fi fi-social-youtube"></i></a></li>
@@ -28,19 +28,18 @@
         </div>
         <div class="top-bar-right">
             <ul class="menu">
-                <li><a href="<?php echo site_url(); ?>/">Sobre</a></li>
-                <li><a href="<?php echo site_url(); ?>/">Contato</a></li>
+                <li class="top-bar" data-responsive-toggle="sticky-menu" data-hide-for="medium"><button type="button" id="mobile-menu" style="color: white" data-toggle><i class="fi fi-list" style="font-size: 1.3em;"></i></button></li>
+                <li><a href="<?php echo site_url(); ?>/o-site/sobre/">Sobre</a></li>
+                <li><a href="<?php echo site_url(); ?>/o-site/feedback/">Contato</a></li>
                 <li><a href="<?php echo site_url(); ?>/wp-admin">Administração</a></li>
             </ul>
         </div>
     </div>
     <div class="headers">
-        <div class="top-bar" data-responsive-toggle="sticky-menu" data-hide-for="medium">
-            <button type="button" style="color: white" data-toggle><i class="fi fi-list" style="font-size: 1.3em;"></i> Navegação</button>
-        </div>
         <div style="z-index: 500;">
-            <div data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="footer:bottom">
-                <div class="top-bar" id="sticky-menu" data-animate="fade-in fade-out">
+            <div class="show-for-medium" id="zmenu" style="z-index: 700; top: 0; left: 0; position: fixed; display: none;"></div>
+            <div data-margin-top='0' data-top-anchor="header:bottom">
+                <div class="top-bar" id="sticky-menu">
                     <div class="top-bar-left">
                         <nav id="nav">
                             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>

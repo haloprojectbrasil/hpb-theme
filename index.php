@@ -1,7 +1,8 @@
 <?php define( 'WP_USE_THEMES', false ); get_header(); ?>
 <header id="header">
     <div id="firstheader">
-        <img src="<?php header_image(); ?>" class="header-img">
+        <img src="<?php header_image(); ?>" class="header-img show-for-medium">
+        <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/Logo-HPB -invertido.png" class="header-img-mobile  show-for-small-only">
     </div>
 </header>
     <div class="row" style="margin-top: 1em;">

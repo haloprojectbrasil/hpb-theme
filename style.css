@@ -45,14 +45,23 @@ h2 {
     font-family: "Fira Sans", sans-serif !important;
 }
 
-.header-img {
+.header-img, .header-img-mobile {
     max-height: 100%;
     width: auto;
 }
 
-#sticky-menu {
+.header-img-mobile {
+    /*background-color: #000000e6;*/
+    padding: 1em;
+}
+
+#sticky-menu, #zmenu {
     position: absolute;
     width: 100%;
+}
+
+#zmenu {
+    padding: 0.5em;
 }
 
 #first {
@@ -183,12 +192,34 @@ aside.sidebar h2 {
     width: 100%;
 }
 
-.top-bar, .top-bar#sticky-menu {
-    /*padding: 1rem;*/
-    /*padding-top: 1.2rem;*/
-    transition: padding .25s ease;
-    background-color:rgba(0, 0, 0, 0.5);
-    color: white;
+@media only screen and (min-width: 40.063em) {
+    .top-bar, .top-bar#sticky-menu, #zmenu {
+        /*padding: 1rem;*/
+        /*padding-top: 1.2rem;*/
+        transition: padding .25s ease;
+        background-color:rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 40em) {
+    .social-menu {
+        /*margin-left: 20vw;*/
+        display: table;
+        margin: 0 auto;
+    }
+    .top-bar, .top-bar#sticky-menu, .submenu {
+        padding: 1rem;
+        transition: padding .25s ease;
+        background-color:#000F21;
+        z-index: 600;
+    }
+
+    #sticky-menu {
+        height: 100vh;
+        background-color: black;
+        color: white;
+    }
 }
 
 ul.menu {
