@@ -9,7 +9,7 @@
 		<div class="medium-5 column" style="font-size: 1.5em;">
 	        <p>Me parece que a página que você estava tentando acessar.... bem, não existe.</p>
 	        <p>Isso pode ser resultado de várias coisas. Ou realmente não existe, ou foi movida para outro lugar - ou o gênio digitou errado.</p>
-			<p> Tente utilizar o capo de pesquisa no cabeçalho para encontrar o que você estava procurando :)</p>
+			<p> Tente utilizar o campo de pesquisa no cabeçalho para encontrar o que você estava procurando :)</p>
 		</div>
     </div>
 	<br><br>

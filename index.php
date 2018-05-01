@@ -69,7 +69,7 @@
 
                     <?php query_posts( 'category_name=Notícias&posts_per_page=6' ); ?>
                     <hr>
-                    <h2><i class="fi-megaphone"></i> Úlltimas Notícias</h2>
+                    <h2><i class="fi-megaphone"></i> Últimas Notícias</h2>
                     <div class="row">
                         <?php while ( have_posts() ) : the_post(); ?>
                             <div class="medium-4 small-12 column post-container" style="height: 250px;">
